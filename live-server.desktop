@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Live Server :4700
-Exec=gnome-terminal -e "live-server --host=localhost --port=4700"
-Icon=/home/golynx/Apps-Run-icon.png
-Name[en_ZA]=Live Server :4700
