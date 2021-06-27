@@ -1,0 +1,33 @@
+.style-flex-container {
+    border: 2px solid white;
+    margin-bottom: 0px;
+    width: 100vw;
+}
+
+.style-left-flex-container {
+    width: 300px;
+    border-right: 0px solid green;
+    margin-bottom: 0px;
+}
+.style-center-flex-container {
+    margin-bottom: 0px;
+}
+.style-right-flex-container {
+    width: 300px;
+    border-left: 0px solid purple;
+    margin-bottom: 0px;
+}
+
+.style-flex-container-column {
+    border: 2px solid green;
+    height: 200px;
+    margin-bottom: 0px;
+}
+
+.style-flex-item {
+    background-color: lightgrey;
+    color: #111111;
+    box-shadow: 0px 0px 5px 2px blue;
+    width: 46px;
+    height: 46px;
+}

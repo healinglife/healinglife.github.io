@@ -1,0 +1,289 @@
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html, body {
+    margin: 0px;
+    font-family: "Open Sans", Helvetica, Verdana, 'Droid Sans Mono', monospace;
+    background: #dad9d9; 
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+a {
+    color: rgb(84, 155, 177);
+    text-decoration: none;
+}
+
+/* webkit scrollbar settings */ 
+::-webkit-scrollbar{ width:.3em;height:.3em }
+::-webkit-scrollbar-thumb { background: rgb(84, 155, 177) }
+::-webkit-scrollbar-track { background: rgb(56, 74, 78) } 
+
+.material-icons {
+    vertical-align: middle; 
+}
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+#fixed-background-container {
+    position: fixed;
+    width: 100vw;
+    background-image: linear-gradient(rgb(31, 71, 120) 28%,rgb(69, 132, 180) 64%);
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
+    /*
+    background-image: url('images//site-bg-1-3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+    animation: animatedBackground 7s linear infinite;
+    */
+}
+
+.header-container {
+    margin-bottom: 10px;
+    height: 85px;
+    z-index: 110;
+    box-shadow: 0px 0px 10px 1px rgb(182, 178, 178);
+    background-color: white;
+    border-bottom: 5px solid rgb(71, 126, 143);
+}
+.header-fixed {
+    position: fixed;
+    width: 100vw;
+}
+.header-flex-container {
+    border: 0px solid red;
+    margin-bottom: 0px;
+    width: 100vw;
+}
+.header-flex-left-container {
+    width: 360px;
+    border-right: 0px solid green;
+    margin-bottom: 0px;
+}
+.header-flex-center-container {
+    margin-bottom: 0px;
+}
+.header-flex-right-container {
+    width: 360px;
+    border-left: 0px solid blue;
+    margin-bottom: 0px;
+}
+.logo-name {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+.logo-img {
+    height: 60px;
+    padding-top: 10px;
+    margin-left: 7px;
+}
+.logo-business-name {
+    font-size: 12px;
+}
+.header-title {
+    color: #00222bff;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+.header-sub-title {
+    font-size: 17px;
+    color: rgb(2, 75, 95);
+    font-weight: bold;
+}
+.header-tab-link {
+    height: 80px;
+    padding: 10px;
+    color: #00222bff;
+    transition: 0.5s;
+}
+.header-tab-link:hover {
+    height: 80px;
+    padding: 10px;
+    color: rgb(200, 242, 255);
+    background-color: rgb(84, 155, 177);
+    border-radius: 0px 0px 0px 0px;
+}
+.header-tab-link-active {
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(71, 126, 143);
+    color: #ffffff;
+    border-radius: 0px 0px 0px 0px;
+}
+.header-gap {
+    height: 50px;
+}
+
+.hero-img {
+    height: 400px;
+    width: 100%;
+}
+
+.content-container {
+    z-index: 2;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.footer-container {
+    width: 100%;
+    z-index: 100;
+    background-color: #00222bff;
+    border-top: 2px solid #cbcbcb;
+    text-align: center;
+}
+.footer-fixed {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+}
+.footer-gap {
+    height: 50px;
+}
+
+.font-serif {
+    font-family: serif;
+}
+
+.menu-container-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: #000;
+}
+
+.menu-container-2 {
+    width: 700px;
+    height: 500px;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.modal-menu-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: table;
+}
+
+.modal-menu-container {
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all 0.3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+    opacity: 1;
+}
+
+@-webkit-keyframes modalMenuFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes modalMenuFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes modalMenuFadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes modalMenuFadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+  
+.modal-menu-fade-in {
+    -webkit-animation: modalMenuFadeIn 0.3s linear;
+    animation: modalMenuFadeIn 0.3s linear;
+}  
+.modal-menu-fade-out {
+    -webkit-animation: modalMenuFadeOut 0.3s linear;
+    animation: modalMenuFadeOut 0.3s linear;
+}
+
+.menu-item {
+    padding: 15px;
+    background-color: #ffffff;
+    color: rgb(27, 113, 139);
+    font-size: 19px;
+    transition: 0.2s;
+}
+.menu-item:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.menu-modal-close {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    color: #00222bff;
+    font-size: 25px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.menu-modal-close:hover {
+    color: rgb(200, 242, 255);
+    background-color: rgb(84, 155, 177);
+}
+
+.card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .4s transform cubic-bezier(.155,1.105,.295,1.12),.4s box-shadow,.4s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
